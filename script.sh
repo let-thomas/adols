@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 echo "begin script"
 echo "begin script" > /tmp/log.txt
 export JFROG_CLI_OFFER_CONFIG=false
