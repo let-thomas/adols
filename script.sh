@@ -11,6 +11,8 @@ if [ -f /agent/.env ]; then
 	echo "ansible=true" >> /agent/.env
 else
 	echo neni file /agent/.env
+	echo "JFROG_CLI_OFFER_CONFIG=false" >> /etc/environment
+	echo "JFROG_CLI_HOME_DIR=/etc/jfrog" >> /etc/environment
 fi
 
 
